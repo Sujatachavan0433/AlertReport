@@ -1,0 +1,35 @@
+.ant-dropdown-menu ant-dropdown-menu-root ant-dropdown-menu-light ant-dropdown-menu-vertical,ng-tns-c9-0 ant-table-filter-dropdown
+{
+    overflow-y: scroll;
+    height: 100px;
+}
+
+.Tab_back .nav-item
+{ 
+    background: #378ECA !important;
+    color: white;
+    /* height: 300px; */
+}
+
+.nav-item > li.active{
+    background: #378ECA !important;
+    /* opacity: 0.3; */
+    color: white;
+    font-weight: 500;
+}
+
+.fa-edit > .fa-edir:hover{
+    font-size: 20px;
+}
+
+.ant-table-tbody>tr>td:first-child {
+    text-align: center;
+    color: #378ECA;
+}
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.49;
+    border: 1px solid deepskyblue;
+    border-radius: 3px 3px 0 0;
+}

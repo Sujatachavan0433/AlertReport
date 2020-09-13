@@ -1,0 +1,46 @@
+<form [formGroup]='initAddform' (ngSubmit)='addData()'>
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" formControlName="Name" class="form-control" />
+
+        <div *ngIf="initAddform.get('Name').errors  && submitted" class="invalid-feedback">
+            <div *ngIf="initAddform.get('Name').hasError('required')">
+                Please Enter Name</div>
+            <div *ngIf="initAddform.get('Name').hasError('pattern')">
+                Name should contain only characters
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <label for="Description">Description</label>
+        <input type="text" formControlName="Description" class="form-control" />
+
+        <div *ngIf="initAddform.get('Description').errors  && submitted" class="invalid-feedback">
+            <div *ngIf="initAddform.get('Description').hasError('required')">
+                Please Enter Description</div>
+            <div *ngIf="initAddform.get('Description').hasError('pattern')">
+                Description should contain only characters
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <label for="webReferences">Web Ref.</label>
+        <input type="text" formControlName="webReferences" class="form-control" />
+
+        <div *ngIf="initAddform.get('webReferences').errors  && submitted" class="invalid-feedback">
+            <div *ngIf="initAddform.get('webReferences').hasError('required')">
+                Please Enter Web References</div>
+            <div *ngIf="initAddform.get('webReferences').hasError('pattern')">
+                Web References should contain only characters
+            </div>
+        </div>
+    </div>
+
+    <button class="btn-primary">
+        Add
+    </button>
+</form>

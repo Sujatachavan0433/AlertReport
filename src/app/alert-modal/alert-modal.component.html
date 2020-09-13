@@ -1,0 +1,60 @@
+<nav>
+    <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+        <li class="Tab_back nav-item">
+            <a class="nav-link active" id="nav-immunization-tab" data-toggle="tab" href="#nav-immunization" role="tab"
+                aria-controls="nav-immunization" aria-selected="true">Immunization Alert</a>
+        </li>
+        <li class="Tab_back nav-item">
+            <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-lab" role="tab"
+                aria-controls="nav-lab" aria-selected="true">Lab Alert</a>
+        </li>
+        <li class="Tab_back nav-item">
+            <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-di" role="tab"
+                aria-controls="nav-di" aria-selected="true">DI Alert</a>
+        </li>
+        <li class="Tab_back nav-item">
+                <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-procedure" role="tab"
+                    aria-controls="nav-procedure" aria-selected="true">Procedure Alert</a>
+            </li>
+        <li class="Tab_back nav-item">
+            <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-rx" role="tab"
+                aria-controls="nav-rx" aria-selected="true">RX Specific Alert</a>
+        </li>
+        <li class="Tab_back nav-item">
+            <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-dx" role="tab"
+                aria-controls="nav-dx" aria-selected="true">DX Specific Alert</a>
+        </li>      
+        <li class="Tab_back nav-item">
+            <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-patient" role="tab"
+                aria-controls="nav-patient" aria-selected="true">Patient Specific Alert</a>
+        </li>
+    </ul>
+</nav>
+
+
+
+<div class="tab-content" id="nav-tabContent">
+
+    <div class="tab-pane fade show active" id="nav-immunization" role="tabpanel" aria-labelledby="nav-immunization-tab"> 
+        <app-immunization-alerts></app-immunization-alerts>
+    </div>
+
+    <div class="tab-pane fade" id="nav-lab" role="tabpanel" aria-labelledby="nav-lab-tab">
+            Lab Alert
+    </div>
+    <div class="tab-pane fade" id="nav-di" role="tabpanel" aria-labelledby="nav-di-tab">
+            DI Alert
+    </div>
+    <div class="tab-pane fade" id="nav-procedure" role="tabpanel" aria-labelledby="nav-procedure-tab">
+            Procedure Alert
+    </div>
+    <div class="tab-pane fade" id="nav-rx" role="tabpanel" aria-labelledby="nav-rx-tab">
+            RX Specific Alert
+    </div>
+    <div class="tab-pane fade" id="nav-dx" role="tabpanel" aria-labelledby="nav-dx-tab">
+            DX Specific Alert
+    </div>
+    <div class="tab-pane fade" id="nav-patient" role="tabpanel" aria-labelledby="nav-patient-tab">
+            Patient Specific Alert
+    </div>
+</div>
